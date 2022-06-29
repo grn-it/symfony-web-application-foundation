@@ -1,1 +1,1 @@
-# symfony-webapp-aplication
+# symfony-web-application-foundation
