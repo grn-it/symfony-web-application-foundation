@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  symfony-web-application-foundation:
+    build:
+      context: .
+      target: symfony-web-application-foundation
+    volumes:
+      - .:/app
+    stop_grace_period: 0s
