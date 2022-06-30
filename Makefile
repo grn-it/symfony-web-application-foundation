@@ -4,4 +4,3 @@ install:
 	cp -r /app/tmp/. /app
 	rm -r tmp
 	chown -R 1000:1000 .
-	symfony server:start --no-tls -d
