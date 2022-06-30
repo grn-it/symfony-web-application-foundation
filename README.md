@@ -1,6 +1,6 @@
 # Symfony Web Application Foundation
 
-Fast way to install symfony web application.  
+Fast way to install Symfony Web Application.  
 
 After installation will be available in docker container:
 - Symfony web application
