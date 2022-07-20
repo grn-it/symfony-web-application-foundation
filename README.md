@@ -22,6 +22,6 @@ docker-compose up -d
 ```
 4. Run installation of Symfony Web Application:  
 ```bash
-docker-compose exec symfony-web-application make install uid=$(id -i)
+docker-compose exec symfony-web-application make install uid=$(id -u)
 ```
 5. Open in browser `http://127.0.0.1:8000` to see installed Symfony Web Application
