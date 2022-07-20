@@ -3,4 +3,6 @@ install:
 	rm -r tmp/.git
 	cp -r /app/tmp/. /app
 	rm -r tmp
-	chown -R 1000:1000 .
+	apk add acl
+	setfacl -dR -m u:$(uid):rwX .
+	setfacl -R -m u:$(uid):rwX .
