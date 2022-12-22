@@ -12,9 +12,14 @@ install-symfony:
 		rm -r tmp; \
 		setfacl -dR -m u:$(uid):rwX .; \
 		setfacl -R -m u:$(uid):rwX .; \
-		yq eval-all '. as $$item ireduce ({}; . * $$item )' docker-compose.dev.yml docker-compose.yml > docker-compose.yml.tmp || true; \
-		mv docker-compose.yml.tmp docker-compose.yml; \
-		rm docker-compose.dev.yml; \
+		if [ -f docker-compose.yml ]; \
+		then \
+			yq eval-all '. as $$item ireduce ({}; . * $$item )' docker-compose.dev.yml docker-compose.yml > docker-compose.yml.tmp; \
+			mv docker-compose.yml.tmp docker-compose.yml; \
+			rm docker-compose.dev.yml; \
+		else \
+			mv docker-compose.dev.yml docker-compose.yml; \
+		fi \
 	fi
 
 up:
