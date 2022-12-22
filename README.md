@@ -10,14 +10,33 @@ After installation in docker container will be available:
 - Composer
 - Curl
 
-## How to Use
-1. Copy these files to your new repository: `Dockerfile`, `docker-compose.dev.yml`, `Makefile`
-2. Run installation of Symfony Web Application:  
+## How to Install
+- Copy these files to your new repository: `Dockerfile`, `docker-compose.dev.yml`, `Makefile`
+- Run installation of Symfony Web Application:  
 ```bash
 make install
 ```
-3. Run Bash in Symfony Web Application container:
+Open in browser `http://127.0.0.1:8000` to see installed Symfony Web Application  
+
+<br>
+
+## How to Use
+
+Up docker containers:
+```bash
+make up
+```
+
+Down docker containers:
+
+```bash
+make down
+```
+
+Run Bash in Symfony Web Application container:
 ```bash
 make symfony
 ```
-4. Open in browser `http://127.0.0.1:8000` to see installed Symfony Web Application
+<br>
+
+All commands can be viewed and new ones can be added to the [Makefile](Makefile)
