@@ -39,4 +39,4 @@ make symfony
 ```
 <br>
 
-All commands can be viewed and new ones can be added to the [Makefile](Makefile)
+All commands can be viewed and new ones can be added to the [Makefile](Makefile).
