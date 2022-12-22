@@ -20,7 +20,6 @@ git clone https://github.com/grn-it/symfony-web-application-install-way.git
 ```bash
 make install
 ```
-*If a new `docker-compose.yml` file has appeared after installation, then its content must be manually merged to the `docker-compose.dev.yml` file.*  
 4. Run Bash in Symfony Web Application container:
 ```bash
 make symfony
