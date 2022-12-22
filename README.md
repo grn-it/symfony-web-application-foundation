@@ -16,7 +16,7 @@ After installation in docker container will be available:
 ```bash
 make install
 ```
-Open in browser `http://127.0.0.1:8000` to see installed Symfony Web Application  
+Open in browser [http://127.0.0.1:8000](http://127.0.0.1:8000) to see installed Symfony Web Application  
 
 <br>
 
