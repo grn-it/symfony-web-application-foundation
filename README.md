@@ -2,7 +2,7 @@
 
 Fast way to install Symfony Web Application.  
 
-After installation will be available in docker container:
+After installation in docker container will be available:
 - Symfony Web Application
 - Built-in Symfony Web server
 - Symfony CLI developer tool
