@@ -1,6 +1,8 @@
 install:
 	docker-compose -f docker-compose.dev.yml up -d
 	docker-compose -f docker-compose.dev.yml exec symfony-web-application make install-symfony uid=$(id -u)
+	@make down
+	@make up
 
 install-symfony:
 	@if [ ! -f symfony.lock ]; \
