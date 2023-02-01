@@ -24,6 +24,9 @@ install-symfony:
 		fi \
 	fi
 
+build:
+	@docker-compose build --force-rm
+
 up:
 	@docker-compose up -d
 	
