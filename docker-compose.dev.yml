@@ -1,6 +1,5 @@
 version: "3.4"
 
-name: app
 services:
   symfony-web-application:
     build:
