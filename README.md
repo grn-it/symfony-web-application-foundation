@@ -13,7 +13,7 @@ After installation in docker container will be available:
 ## How to Install
 Run this command in an empty project directory:  
 ```bash
-curl -s https://raw.githubusercontent.com/grn-it/symfony-web-application-install-way/main/install.sh | bash
+curl -s -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/grn-it/symfony-web-application-install-way/main/install.sh | bash
 ```
 
 Open in browser [http://127.0.0.1:8000](http://127.0.0.1:8000) to see installed Symfony Web Application  
