@@ -1,5 +1,3 @@
-SHELL := /bin/bash
-
 install:
 	docker-compose -f docker-compose.dev.yml build --force-rm
 	docker-compose -f docker-compose.dev.yml -p app up -d
