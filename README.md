@@ -11,14 +11,10 @@ After installation in docker container will be available:
 - Curl
 
 ## How to Install
-- Copy these files to your new repository: `Dockerfile`, `docker-compose.dev.yml`, `Makefile`
-- Run installation of Symfony Web Application:  
-```bash
-make install
-```
-Open in browser [http://127.0.0.1:8000](http://127.0.0.1:8000) to see installed Symfony Web Application  
+Run this command in an empty project directory:  
+`curl -s https://raw.githubusercontent.com/grn-it/symfony-web-application-install-way/main/install.sh | bash`  
 
-<br>
+Open in browser [http://127.0.0.1:8000](http://127.0.0.1:8000) to see installed Symfony Web Application  
 
 ## How to Use
 
