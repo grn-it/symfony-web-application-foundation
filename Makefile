@@ -1,8 +1,7 @@
 install:
-	docker-compose -f docker-compose.dev.yml -p app build --force-rm
-	docker-compose -f docker-compose.dev.yml -p app up -d
-	until [ ! -z "`curl -s -I http://127.0.0.1:8000 | grep HTTP/1.1`" ]; do sleep 2; done;
-	docker-compose -f docker-compose.dev.yml -p app exec symfony-web-application make install-symfony uid=$(shell id -u)
+	docker-compose -f docker-compose.dev.yml build --force-rm
+	docker-compose -f docker-compose.dev.yml up -d
+	docker-compose -f docker-compose.dev.yml exec symfony-web-application make install-symfony uid=$(shell id -u)
 	make down
 	make up
 
@@ -27,13 +26,13 @@ install-symfony:
 	fi
 
 build:
-	@docker-compose -p app build --force-rm
+	@docker-compose build --force-rm
 
 up:
-	@docker-compose -p app up -d
+	@docker-compose up -d
 	
 down:
-	@docker-compose -p app down
+	@docker-compose down
 
 symfony:
-	@docker-compose -p app exec symfony-web-application bash
+	@docker-compose exec symfony-web-application bash
