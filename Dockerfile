@@ -1,4 +1,4 @@
-FROM php:8.1-alpine AS symfony-web-application
+FROM php:8.2-alpine AS symfony-web-application
 RUN apk add bash acl yq make git && \
     curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.alpine.sh' | bash && \
     apk add symfony-cli
